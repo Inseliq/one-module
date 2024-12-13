@@ -27,6 +27,12 @@ main {
     transform: translateY(-50%);
 }
 
+.moder {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(255, 159, 159);
+}
+
 .profile {
     display: flex;
     width: 100%;
@@ -38,6 +44,10 @@ main {
     gap: 15px;
 
     & span {
+        font-size: 20px;
+    }
+
+    & a {
         font-size: 20px;
     }
 
@@ -150,6 +160,14 @@ main {
                 display: flex;
                 flex-direction: column;
 
+                & .button {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 25px;
+                    }
+
                 & .info {
                     text-align: justify;
                     text-indent: 5px;
@@ -181,13 +199,6 @@ main {
                     height: 100%;
                     gap: 15px;
                     align-items: center;
-
-                    & .button {
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-between;
-                        gap: 35px;
-                    }
 
                     & .additions {
                         width: 100%;

@@ -40,12 +40,12 @@ div.content {
 }
 .table_dark th {
   color: whitesmoke;
-  border-bottom: 1px solid #37B5A5;
+  border-bottom: 1px solid #47d7c4;
   padding: 12px 17px;
 }
 .table_dark td {
   color: #ffffff;
-  border-bottom: 1px solid #37B5A5;
+  border-bottom: 1px solid #47d7c4;
   padding: 7px 17px;
 
   & img {
@@ -53,6 +53,11 @@ div.content {
     height: 75px;
     border-radius: 5px;
   }
+}
+
+.table_dark tr.style:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .table_dark tr:last-child td {
   border-bottom: none;
