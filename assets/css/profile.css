@@ -219,3 +219,47 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 681px) {
+main {
+padding: 10px;
+}
+.profile .profile__section .content img {
+  width: 16px !important;
+  height: 16px;
+}
+
+.button {
+    justify-content: center !important;
+    gap: 15px !important;
+    & .btn {
+        font-size: 14px;
+    }
+}
+
+.additions p,
+.additions p span,
+.info span,
+.profile span,
+.profile a {
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 556px) {
+
+.profile {
+  padding: 25px;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+.additions p,
+.additions p span,
+.info span,
+.profile span,
+.profile a {
+  font-size: 12px;
+}
+}
