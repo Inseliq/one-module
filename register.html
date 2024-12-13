@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Регистрация</title>
+		<link rel="stylesheet" href="assets/css/root.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/register.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">
+				<img src="assets/media/logo.png" class="logo" alt="Logo" />
+			</a>
+			<nav>
+				<a class="link" href="search.html">Поиск</a>
+				<a class="link" href="add.html">Добавить</a>
+				<a class="link" href="index.html#reviews__sec">Отзывы</a>
+				<a href="profile.html" class="link">Личный кабинет</a>
+				<a class="btn" href="login.html">Войти</a>
+			</nav>
+		</header>
+		<main>
+			<section class="registration__sec">
+				<div class="container">
+					<form action="" class="register__form">
+						<h1 class="sec__title inversion">Регистрация</h1>
+						<span class="error_global">
+							Не удалось установить связь с сервером<br>
+							Пользователь уже зарегистрирован
+						</span>
+						<div class="content">
+							<label for="name">Имя</label>
+							<input type="text" name="name" required />
+							<span class="error_message">Это обязательное поле</span>
+						</div>
+
+						<div class="content">
+							<label for="name">Фамилия</label>
+							<input type="text" name="name" required />
+							<span class="error_message">Это обязательное поле</span>
+						</div>
+
+						<div class="content">
+							<label for="email">Email</label>
+							<input type="email" name="email" required />
+							<span class="error_message">
+								Это обязательное поле<br>
+								Укажите test@example.ru
+							</span>
+						</div>
+
+						<div class="content">
+							<label for="password">Пароль</label>
+							<input type="password" id="password" name="password" required/>
+							<span class="error_message">
+								Это обязательное поле<br>
+								Пароль должен быть 8 символов
+							</span>
+						</div>
+
+						<div class="content">
+							<label for="confirm-password">Подтвердите пароль</label>
+							<input type="password" name="confirmPassword" required/>
+							<span class="error_message">
+								Это обязательное поле<br>
+								Пароли не совпадают
+							</span>
+						</div>
+
+						<div class="submit">
+							<input type="checkbox" name="terms" class="checkbox" required />
+							<label for="terms"
+								>Я соглашаюсь на обработку
+								<a href="#" class="link-transition">персональных данных</a>
+							</label>
+						</div>
+
+						<div class="submit">
+							<input type="submit" onclick="window.location.href='profile.html'"value="Зарегистрироваться" class="btn" />
+						</div>
+							<div class="link_group">
+								<a href="login.html" class="link-transition">Есть аккаунт?</a>
+								<a href="#" class="link-transition">Забыли пароль?</a>
+							</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="contact">
+				<p class="phone">+7 (958) 559-62-84</p>
+				<p class="mail">MyMail@example.ru</p>
+			</div>
+			<nav>
+        <a class="link" href="search.html">Поиск</a>
+				<a class="link" href="index.html">Главная</a>
+				<a class="link" href="login.html">Войти</a>
+				<a class="link" href="add.html">Найденное животное</a>
+				<a class="link" href="index.html#reviews__sec">Отзывы</a>
+			</nav>
+		</footer>
+	</body>
+</html>

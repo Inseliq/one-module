@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Добавление информации о животном</title>
+		<link rel="stylesheet" href="assets/css/root.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/register.css" />
+		<link rel="stylesheet" href="assets/css/add.css" main>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">
+				<img src="assets/media/logo.png" class="logo" alt="Logo" />
+			</a>
+			<nav>
+				<a class="link" href="search.html">Поиск</a>
+				<a class="link" href="index.html">Главная</a>
+				<a class="link" href="index.html#reviews__sec">Отзывы</a>
+				<a href="profile.html" class="link">Личный кабинет</a>
+				<a class="btn" href="login.html">Войти</a>
+			</nav>
+		</header>
+		<main>
+<section class="registration__sec">
+				<div class="container">
+					<form action="" class="register__form">
+					<h1 class="sec__title inversion">Добавить информацию о найденном животном</h1>
+					<span class="error_global">
+							Не удалось установить связь с сервером<br>
+							Укажите все поля
+						</span>
+
+						<div class="content">
+							<label for="phone">Номер телефона:</label>
+							<input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required />
+							<span class="error_message">
+								Введите корректный номер телефона<br>
+								Это обязательное поле
+							</span>
+						</div>
+
+						<div class="content">
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" name="email" placeholder="Введите e-mail" required />
+							<span class="error_message">
+								Укажите test@example.ru<br>
+								Это обязательное поле
+							</span>
+						</div>
+
+						<div class="submit checkbox_group">
+							<input class="checkbox" type="checkbox" id="open-reg__block" name="open-reg__block" required />
+							<label for="open-reg__block">
+								Автоматически зарегистрировать профиль
+							</label>
+						</div>
+
+						<div class="content hidden">
+							<label for="password">Пароль:</label>
+							<input type="password" id="password" name="password" placeholder="Введите пароль" required/>
+							<span class="error_message">
+								Пароль должен содержать 8 символов<br>
+								Это обязательное поле
+							</span>
+						</div>
+
+						<div class="content hidden">
+							<label for="confirm-password">Подтвердите пароль:</label>
+							<input type="password" id="confirm-password" name="confirm-password" placeholder="Подтвердите пароль" required />
+							<span class="error_message">
+								Пароли не совпадают<br>
+								Это обязательное поле
+							</span>
+						</div>
+
+						<div class="content">
+							<label for="animal-type">Вид животного:</label>
+							<select id="animal-type" name="animal-type" required>
+								<option value="default">Выберите...</option>
+								<option value="dog">Собака</option>
+								<option value="cat">Кошка</option>
+								<option value="bird">Птица</option>
+								<option value="other">Другое</option>
+							</select>
+							<span class="error_message">Выберите тип животного</span>
+						</div>
+
+						<div class="content photos">
+							<label for="photos">Фото найденного животного (не более 3):</label>
+							<input type="file" id="photos" name="photos[]" accept="image/*" multiple/>
+							<span class="error_message">Фотографии обязательно</span>
+						</div>
+
+						<div class="content">
+							<label for="details">Дополнительная информация:</label>
+							<textarea id="details" name="details" placeholder="Расскажите как вы нашли" required></textarea>
+							<span class="error_message">
+								Это обязательное поле
+							</span>
+						</div>
+
+						<div class="content">
+							<label for="mark">Клеймо:</label>
+							<input type="text" id="mark" name="mark" placeholder="Введите клеймо (если есть)"/>
+						</div>
+
+						<div class="content">
+							<label for="district">Район:</label>
+							<input type="text" id="district" name="district" placeholder="Введите район" required/>
+							<span class="error_message">Это обязательное поле</span>
+						</div>
+
+						<div class="content">
+							<label for="found-date">Дата находки:</label>
+							<input type="date" id="found-date" name="found-date" required />
+							<span class="error_message">Это обязательно поле</span>
+						</div>
+
+						<div class="submit checkbox_group">
+							<input type="checkbox" id="consent" name="consent" required class="checkbox"/>
+							<label for="consent">Я согласен с <a href="#" class="link-transition">Условиями конфенденциальности</a></label>
+						</div>
+						<div class="submit">
+							<a type="submit" href="search.html" class="btn">Добавить объявление</a>
+						</div>
+					</form>
+			</div>
+</section>
+		</main>
+		<footer>
+			<div class="contact">
+				<p class="phone">+7 (958) 559-62-84</p>
+				<p class="mail">MyMail@example.ru</p>
+			</div>
+			<nav>
+        <a class="link" href="search.html">Поиск</a>
+				<a class="link" href="search.html">Главная</a>
+				<a class="link" href="login.html">Войти</a>
+				<a class="link" href="addPet.html">Найденное животное</a>
+				<a class="link" href="index.html#reviews__sec">Отзывы</a>
+			</nav>
+		</footer>
+	</body>
+</html>

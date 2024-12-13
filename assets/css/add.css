@@ -1,0 +1,47 @@
+.register__form {
+  width: 100% !important;
+  max-width: 900px !important;
+
+  & label, input {
+    font-size: 20px !important;
+  }
+
+  & .checkbox_group {
+    justify-content: flex-start!important;
+
+    & .checkbox {
+      width: 20px;
+    }
+  }
+
+  & .photos > input {
+    cursor: pointer;
+    padding: 0px!important;
+  }
+}
+
+select, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid var(--main-color);
+    }
+}
+
+textarea {
+resize: vertical;
+min-height: 100px;
+}
+
+.error_global {
+  font-size: 20px !important;
+}
+
+.error_message {
+  font-size: 16px !important;
+}

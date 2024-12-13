@@ -1,0 +1,210 @@
+@keyframes changeProfile {
+0%{
+    transform: rotate(0deg);
+}
+25% {
+    transform: rotate(-5deg);
+}
+50% {
+    transform: rotate(-10deg);
+}
+75% {
+    transform: rotate(-5deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+
+main {
+    padding: 25px;
+}
+
+.btn-profile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.profile {
+    display: flex;
+    width: 100%;
+    background: var(--secondary-color);
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    & span {
+        font-size: 20px;
+    }
+
+    & .profile__section {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--bg-card);
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 350px;
+        width: 100%;
+        gap: 15px;
+
+        & .foto__profile {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            & img {
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+            }
+        }
+
+        & .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5px;
+            gap: 5px;
+
+            & .text-disable {
+                color: #cecece;
+                font-size: 17px;
+            }
+
+            & .active {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                & img {
+                    width: 24px;
+                    filter: invert(100%);
+                    cursor: pointer;
+                }
+
+                & img:hover {
+                    transform: scale(1.05);
+                    animation: changeProfile 1.5s ease-in infinite;
+                }
+
+                & img:active {
+                    transform: scale(1.1);
+                    filter: invert(80%);
+                }
+            }
+        }
+    }
+}
+
+.ads {
+    margin-top: 50px !important;
+    margin-bottom: 15px!important;
+}
+
+.arhive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 35px;
+
+    & span, p {
+        font-size: 20px;
+    }
+
+    & .arhive-block {
+        filter: grayscale(70%) opacity(0.8);
+    }
+
+    & .active {
+        background: #54c7b9 !important;
+    }
+
+    & .condition {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & .card {
+            color: black;
+            background: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 15px;
+            flex-wrap: wrap;
+
+            & .content {
+                display: flex;
+                flex-direction: column;
+
+                & .info {
+                    text-align: justify;
+                    text-indent: 5px;
+                    max-width: 600px;
+                    width: 100%;
+                    height: 100%;
+
+                    & span {
+                        font-weight: 400;
+                    }
+
+                    & .main-text {
+                        font-weight: 700;
+                    }
+                }
+
+                & img {
+                    max-width: 400px;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                & .identity {
+                    max-width: 450px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    gap: 15px;
+                    align-items: center;
+
+                    & .button {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        gap: 35px;
+                    }
+
+                    & .additions {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 13px;
+
+                        & p {
+                            font-weight: 400;
+
+                            & span {
+                                font-weight:700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
